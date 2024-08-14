@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #848484; /* Dark blue background */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* Increased height of container */
+    overflow: hidden;
+    width: 100%; /* Full-width container */
+}
+
+#bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    width: 10px;
+    height: 100%;
+    margin: 0 2px;
+    background-color: #000; /* Default to black */
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scaleY(0.5);
+    }
+    50% {
+        transform: scaleY(1.5);
+    }
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
